@@ -22,6 +22,7 @@ body {
 
 body {
     color: #212226;
+    font-family: "Cairo", Arial, "Helvetica Neue", Helvetica, serif;
 }
 
 h1,
@@ -30,11 +31,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Raleway", sans-serif;
+ /*   font-family: "Raleway", sans-serif; */
+ font-family:  "Cairo", Arial, "Helvetica Neue", Helvetica, serif;
+ font-size: 16px;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Cairo", Arial, "Helvetica Neue", Helvetica, serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -145,7 +148,7 @@ section {
 ============================================ */
 
 .btn-general {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Cairo", Arial, "Helvetica Neue", Helvetica, serif;
     border-radius: 28px;
     font-size: 25px;
     text-transform: uppercase;
