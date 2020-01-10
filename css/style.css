@@ -14,7 +14,7 @@
 /* =========================================
                 Html, Body
 ============================================ */
-@import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+/* @import url(//fonts.googleapis.com/earlyaccess/droidarabickufi.css); */
 /* @font-face {
   font-family: "Cairo-Regular.ttf" format("truetype");
   src: url("./Cairo/");
@@ -29,7 +29,8 @@ body {
 body {
   color: #212226;
   /* font-family: "Cairo-Regular.ttf"; */
-  font-family: "Droid Arabic Kufi", serif;
+  font-family: Cairo, sans-serif;
+  /* font-family: "Droid Arabic Kufi", serif; */
   text-align: right;
 }
 /* Our Team Test */
