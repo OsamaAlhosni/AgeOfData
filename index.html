@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
 
     <!-- important meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <!--   <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!--   <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     
+
 
     <!-- Title -->
     <title>كلية العلوم الإدارية والمالية</title>
-    
+
     <!-- Basic SEO -->
     <meta name="description" content="Creative website development with html5, css3, jQuery & bootstrap framework">
-    <meta name="keywords" content="HTML5, CSS3, JQuery, Bootstrap, Web Design, Web Development, Responsive website, Creative website">
-
+    <meta name="keywords"
+        content="HTML5, CSS3, JQuery, Bootstrap, Web Design, Web Development, Responsive website, Creative website">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico">
 
@@ -25,10 +25,12 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-rtl.min.css">
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
@@ -61,56 +63,38 @@
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="site-nav-wrapper">
+        <nav class="navbar fixed-top navbar-expand-lg nav-menu">
+            <a class="navbar-brand smooth-scroll" href="#home">
+                <img src="img/logo/logo.jpg" alt="logo" style="opacity: 0.5;
+                filter: alpha(opacity=50);">
+            </a>
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <div class="bg-light line1"></div>
+                <div class="bg-light line2"></div>
+                <div class="bg-light line3"></div>
+            </button>
+            <div class="collapse navbar-collapse  font-weight-bold" id="myNavBar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 active menu-item"
+                            href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#about">حول الكلية</a>
+                    </li>
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#team">هيئة التدريس</a>
+                    </li>
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#services">أقسام
+                            الكلية</a></li>
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#blog">ابحاث ودراسات</a>
+                    </li>
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#contact">إتصل بنا</a>
+                    </li>
 
-                    <div class="navbar-header">
+                    <li class="nav-item"><a class="smooth-scroll nav-link m-2 menu-item" href="#portfolio">خدمات
+                            الطلبة</a></li>
 
-                        <!-- Mobile Menu Open Button -->
-                        <span id="mobile-nav-open-btn">&#9776;</span>
 
-                        <!-- Logo -->
-                        <a class="navbar-brand smooth-scroll" href="#home">
-                            <img src="img/logo/logo.png" alt="logo">
-                        </a>
-                    </div>
-
-                    <!-- Main Menu -->
-                    <div class="container">
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav pull-right">
-                                <li><a class="smooth-scroll" href="#contact">إتصل بنا</a></li>
-                                <li><a class="smooth-scroll" href="#blog">ابحاث ودراسات</a></li>
-                                <li><a class="smooth-scroll" href="#portfolio">خدمات الطلبة</a></li>
-                                <li><a class="smooth-scroll" href="#services">أقسام الكلية</a></li>
-                                <li><a class="smooth-scroll" href="#team">هيئة التدريس</a></li>
-                                <li><a class="smooth-scroll" href="#about">حول الكلية</a></li>
-                                <li><a class="smooth-scroll active" href="#home">الرئيسية</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu -->
-                    <div id="mobile-nav">
-                        <!-- Mobile Menu Close Button -->
-                        <span id="mobile-nav-close-btn">&times;</span>
-
-                        <div id="mobile-nav-content">
-                            <ul class="nav">
-                                <li><a class="smooth-scroll" href="#contact">إتصل بنا</a></li>
-                                <li><a class="smooth-scroll" href="#blog">ابحاث ودراسات</a></li>
-                                <li><a class="smooth-scroll" href="#portfolio">خدمات الطلبة</a></li>
-                                <li><a class="smooth-scroll" href="#services">أقسام الكلية</a></li>
-                                <li><a class="smooth-scroll" href="#team">هيئة التدريس</a></li>
-                                <li><a class="smooth-scroll" href="#about">حول الكلية</a></li>
-                                <li><a class="smooth-scroll active" href="#home">الرئيسية</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
+                </ul>
             </div>
+
         </nav>
     </header>
     <!-- Header Ends -->
@@ -143,8 +127,13 @@
                 </div>
 
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">أبدأ من هنا</a>
+                    <a class="btn btn-general btn-home smooth-scroll btn-lg px-4 m-3" href="#about" title="Start Now"
+                        role="button">أبدأ
+                        من هنا</a>
+                    <a class="btn btn-general btn-home smooth-scroll btn-lg px-4 m-3" href="/soon.html"
+                        title="Start Now" target="_balnk" role="button">البوابة الإلكترونية</a>
                 </div>
+
 
             </div>
 
@@ -160,9 +149,7 @@
 
     <!-- About -->
     <section id="about">
-
-        <!-- About 01 -->
-        <div id="about-01">
+        <section id="statement" class="mt-4">
 
             <div class="content-box-lg">
 
@@ -170,29 +157,93 @@
 
                     <div class="row">
 
-                        <!-- About Left Side -->
-                        <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+                        <div class="col-md-12 wow fadeIn">
 
-                            <div id="about-left">
-                                <div class="vertical-heading">
-                                    <h5>من نحن</h5>
-                                    <h2 style="text-align: right">تعرف على <strong>قصتنا</strong><br>بإختصار</h2>
-                                </div>
+                            <div id="tech-statement" class="text-center">
+                                <p class="mb-4">كلمة عميد الكلية</p>
+                                <h3 class="mb-4"><i class="fa fa-quote-left "></i> هذا النص هو مثال لنص يمكن أن يستبدل
+                                    في نفس المساحة، لقد
+                                    تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                                    النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                    تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع
+                                    على
+                                    وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                    الموقع.
+                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور
+                                    مولد
+                                    النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث
+                                    عنه
+                                    التصميم فيظهر بشكل لا يليق. <i class="fa fa-quote-right"></i> </h3>
+                                <p>د. عميد كلية العلوم الإدارية والمالية</p>
+
                             </div>
 
                         </div>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About 01 -->
+        <div id="about-01">
+
+            <div class="container-fluid mt-4">
+                <div class="row text-center">
+                    <div class="col m-4">
+                        <H1 class="display-4 mb-4  wow slideInRight" style="color: #f4c613;">كلية العلوم
+                            الإداريةوالمالية</H1>
+                        <div class="underline mb-4"></div>
+                        <p class="lead mt-4 wow slideInRight">ينصب تركيز كلية العلوم الإدارية والمالية بالمقام الأول على
+                            جودة التعليم، والبحث العلمي وريادة الأعمال، من اجل إعداد وتهيئة خريجيها من خلال تنمية
+                            مهاراتهم وقدراتهم على التعلم مدى الحياة وتسليحهم بالمعرفة ليصبحوا قادة الوطن في المستقبل. في
+                            نفس الوقت تطمح كلية العلوم الإدارية والمالية إلى نشر وتعزيز المعرفة في ليبيا بغرض توسيع
+                            قاعدة الدراسات العلمية والإقتصادية ومن ثمّ مواكبة الدول الرائدة في مجالات الاقتصاد وعلوم
+                            الإدارة الحديثة، والعمل على المساهمة في دفع عجلة الإقتصاد الوطني، وتخريج كوادر وطنية على
+                            مستوى عالي من الكفاءة والحرفية
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box-lg">
+
+                <div class="container">
+
+                    <div class="row">
                         <!-- About Right Side -->
-                        <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
+                        <div class="col-lg-12 col-md-12 col-sm-6 wow slideInLeft" data-wow-duration="1s">
 
-                            <div id="about-right" style="text-align: right">
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <div id="team-left">
 
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                <div class="vertical-heading">
+                                    <h5>من نحن</h5>
+                                    <h2>نشأة <strong>وتطور</strong> الكلية</h2>
+                                </div>
+                                <p class="lead text-secondary"> تأسست كلية العلوم الإدارية والمالية التطبيقية /طرابلس
+                                    تحت
+                                    مسمى ((المركـز المتقدم للمهن الادارية والمالـــية)) بقرار من أمين اللجنة الشعبية
+                                    العامــة للتكوين والتدريب المهني سابقا رقم (54 لسنة 1989). وتم ترقيتها إلى كلية
+                                    للتعليم التقني بقرار اللجنة الشعبية العامة سابقا رقم (534 لسنة 2009) ونص قرار
+                                    الإنشاء على أن تعمل الكلية على تحقيق الأغراض التالية: <br>
+                                    1. أعداد وتخريج الكفاءات الإدارية والمالية من مستوى التعليم العالي. <br>
+                                    2. رفع كفاءة من سبق تأهيلهم في هذه المجالات من خلال دورات متخصصة تنفذهاالكلية لهذا
+                                    الغرض. <br>
+                                    3. تكوين قاعدة بشرية مؤهلة وقادرة على الإيفاء بمتطلبات خطط التحول والتنمية. <br>
+                                    4. إجراء البحوث والدراسات العلمية والتقنية المتخصصة وربطها بالواقع العملي. <br>
+                                    5. توطيد العلاقات مع المؤسسات العلمية والتقنية والتدريبية المماثلة. <br>
+                                    6. تنظيم الدورات والندوات والمشاركة في المؤتمرات ذات العلاقة بتخصصات الكلية في
+                                    الداخل والخارج. <br>
+
+                                    وتحظى الكلية بسمعة طيبة محليا والذي يبرز في اعداد المتقدمين للدراسة بالكلية سنويا
+                                    إضافة إلى الطلب المتزايد على خريجي الكلية مقارنة بخريجي المؤسسات التعليمية المناظرة
+                                    في ليبيا.
+                                </p>
+
                             </div>
 
                         </div>
@@ -205,7 +256,7 @@
                         <div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
 
                             <div id="about-bottom">
-                                <img src="img/about/about.png" alt="About Us" class="img-responsive">
+                                <img src="img/about/about.png" alt="About Us" class="img-fluid">
                             </div>
 
                         </div>
@@ -220,58 +271,112 @@
         <!-- About 01 Ends -->
 
         <!-- About 02 -->
-        <div id="about-02">
+        <section class="bg-light p-5">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-6">
+                        <i class="fa fa-rocket fa-6x text-warning mb-3 wow slideInRight"></i>
+                        <h1 class="text-secondary wow slideInRight">رسالتنا</h1>
+                        <hr>
+                        <p class=" lead text-secondary my-4 wow slideInRight">تعمل كلية العلوم الإدارية والمالية
+                            التطبيقية طرابلس على تزويد
+                            سوق العمل بكفاءات متمكنة علميا ومهنيا وطموحة مدركة لمسئولياتها من خلال توفير المناخ
+                            التعليمي المناسب الذي يعزز التميز والثقة في النفس ومبني على معايير جودة عالية.
+                        </p>
 
-            <div class="content-box-md">
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="fa fa-eye fa-6x text-warning mb-3 wow slideInLeft"></i>
+                        <h1 class="text-secondary wow slideInLeft">رؤيتنا</h1>
+                        <hr>
+                        <p class=" lead text-secondary wow slideInLeft">تجتهد الكلية بأن تستمر كبيئة منضبطة ومحفزة تقدم
+                            للمجتمع
+                            كفاءات واعية ومسئولة وطموحة تتمتع بمهنية عالية ولها قيمة مضافة لسوق العمل.
+                        </p>
 
-                <div class="container">
+                    </div>
+                    <div class="col-lg-6">
 
-                    <div class="row">
+                        <i class="fas fa-bullseye fa-6x text-warning mb-3 wow slideInRight"></i>
+                        <h1 class="text-secondary wow slideInRight">أهدافنا</h1>
+                        <hr>
+                        <br>
+                        <ul class="text-right lead text-secondary WeAreFont wow slideInRight">
+                            <li>
+                                تطوير الخطط الدراسية واستحداث التخصصات الـــتي تلبي احتياجات سوق العمل .
+                            </li>
+                            <li>
+                                التوجه لفتح قسم للدراسات العليا في مجال تخصص الكلية.
+                            </li>
+                            <li>
+                                المساهمة في تأهيل وتطوير خريجي الكلية ومنتسبي الجهاز الإداري في الدولة
+                                والقطاع الخاص بما يلبي احتياجات سوق العمل.
+                            </li>
+                            <li>
+                                تطوير ودعم البحث العلمي في الكلية.
+                            </li>
+                            <li>
+                                توفير البنية التحتية اللازمة لمباني ومرافق الكلية لاستيعاب النمو المتوقع في
+                                عدد الطلبة.
+                            </li>
+                            <li>
+                                التميز في خدمة ودعم طلبة الكلية .
+                            </li>
+                            <li>
+                                تطوير البيئة العلمية والتقنية - تطوير الأداء المؤسسي للكلية وفقا لمعايير الجودة الشاملة.
+                            </li>
+                            <li>
+                                بناء الصورة الذهنية الإيجابية عن الكلية.
+                            </li>
+                            <li>
+                                استكمال عملية الحصول على الاعتماد المؤسسي والبرامجي للكلية.
+                            </li>
+                            <li>
+                                تحسين الموارد الذاتية للكلية.
+                            </li>
 
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft">
-                            <!-- About item 01 -->
-                            <div class="about-item text-center">
-                                <i class="fa fa-rocket"></i>
-                                <h3>مهمتنا</h3>
-                                <hr>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                            </div>
+                        </ul>
 
-                        </div>
-                        <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="2s">
-                            <!-- About item 02 -->
-                            <div class="about-item text-center">
-                                <i class="fa fa-eye"></i>
-                                <h3>رؤيتنا</h3>
-                                <hr>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                            </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <i class="fa fa-graduation-cap fa-6x text-warning mb-3 wow slideInLeft"></i>
+                        <h1 class="text-secondary wow slideInLeft">قيمنا</h1>
+                        <hr>
+                        <br>
+                        <ul class="text-right lead text-secondary WeAreFont wow slideInLeft">
+                            <li>
+                                الالتزام بالتشريعات المنظمة لعمل الكلية.
+                            </li>
+                            <li>
+                                التعامل فيما بيننا ومع زبائننا باحترام ونتقبل الرأي الآخر.
+                            </li>
+                            <li>
+                                الشفافية وتعزير بيئة العمل بما يحقق الصدق والعدل والانفتاح على الأخرين.
+                            </li>
+                            <li>
+                                تحمل مسئولية المهام الموكلة للكلية.
+                            </li>
+                            <li>
+                                الثقة بالعاملين وتمكينهم والعمل بروح الفريق.
+                            </li>
+                            <li>
+                                توطين ثقافة التبادل المعرفي.
+                            </li>
+                            <li>
+                                التعاون وإقامة شراكات فعالة مع أصحاب المصالح من العملاء الداخليين والخارجيين.
+                            </li>
+                            <li>
+                                التميز في الأداء.
+                            </li>
 
-                        </div>
-                        <div class="col-md-4 col-sm-4  wow fadeInRight">
-                            <!-- About item 03 -->
-                            <div class="about-item text-center">
-                                <i class="fa fa-pencil"></i>
-                                <h3>أهدافنا</h3>
-                                <hr>
-                                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                            </div>
-
-                        </div>
+                        </ul>
 
                     </div>
 
                 </div>
-
             </div>
 
-        </div>
+        </section>
         <!-- About 02 Ends -->
 
     </section>
@@ -288,7 +393,7 @@
                 <div class="row">
 
                     <!-- Team Left Side -->
-                    <div class="col-md-6 col-sm-6 wow slideInLeft" data-wow-duration="1s">
+                    <div class="col-md-12 col-sm-12 wow slideInLeft" data-wow-duration="1s">
 
                         <div id="team-left">
 
@@ -296,16 +401,23 @@
                                 <h5>من نحن</h5>
                                 <h2 style="text-align: right">تعرف على<br><strong>موظفي وهيئة تدريس</strong> الكلية</h2>
                             </div>
-                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <p class="text-right lead text-secondary">هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                المساحة، لقد تم توليد
+                                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
 
                         </div>
 
                     </div>
 
                     <!-- Team Right Side -->
-                    <div class="col-md-6 col-sm-6 wow slideInRight" data-wow-duration="1s">
+                    <div class="col-md-12 col-sm-12 wow slideInRight" data-wow-duration="1s">
 
                         <div id="team-members" class="owl-carousel owl-theme">
 
@@ -343,7 +455,7 @@
                             </div>
                             <!-- Member 03 -->
                             <div class="team-member">
-                             <img src="img/team/team-1.jpg" alt="team member" class="img-responsive">   
+                                <img src="img/team/team-1.jpg" alt="team member" class="img-responsive">
                                 <div class="team-member-overlay">
                                     <div class="team-member-info text-center">
                                         <h6>ابتسام علي</h6>
@@ -424,7 +536,8 @@
                             <div class="skill">
                                 <h4>خريجي قسم المحاسبة</h4>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%;">
                                         <span>95%</span>
                                     </div>
                                 </div>
@@ -436,7 +549,8 @@
                             <div class="skill">
                                 <h4>خريجي قسم إدارة الأعمال</h4>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%;">
                                         <span>75%</span>
                                     </div>
                                 </div>
@@ -447,7 +561,8 @@
                             <div class="skill">
                                 <h4>خريجي قسم المصارف والإستثمار</h4>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%;">
                                         <span>75%</span>
                                     </div>
                                 </div>
@@ -458,7 +573,8 @@
                             <div class="skill">
                                 <h4>نسبة المتخرجين الكلية</h4>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100" style="width: 0%;">
                                         <span>90%</span>
                                     </div>
                                 </div>
@@ -477,37 +593,6 @@
 
     </section>
     <!-- Team Ends -->
-
-    <!-- Statement -->
-    <section id="statement">
-
-        <div class="content-box-lg">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12 wow fadeIn">
-
-                        <div id="tech-statement" class="text-center">
-
-                            <h3><i class="fa fa-quote-left"></i> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق. <i class="fa fa-quote-right"></i> </h3>
-                            <p>د. عميد كلية العلوم الإدارية والمالية</p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Statement Ends -->
 
     <!-- Services -->
     <section id="services">
@@ -533,9 +618,9 @@
 
                     <div class="row">
 
-                        <div class="col-md-7 col-sm-7 wow slideInLeft">
+                        <!-- <div class="col-md-7 col-sm-7 wow slideInLeft">
                             <img src="img/services/laptop-lamp.png" alt="laptop" class="img-responsive">
-                        </div>
+                        </div> -->
                         <div class="col-md-5 col-sm-5 wow slideInRight">
 
                             <!-- Service 01 -->
@@ -544,17 +629,25 @@
 
                                     <div class="col-md-2 col-sm-2">
                                         <div class="icon text-right">
-                                            <!--fa-paint-brush-->
+
                                             <i class="fa fa-calculator"></i>
                                         </div>
+
                                     </div>
 
                                     <div class="col-md-10 col-sm-10" style="text-align: right">
                                         <h5>علوم المحاسبة المالية</h5>
                                         <h4>نخرج محاسبين أكفاء</h4>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -567,16 +660,23 @@
                                     <div class="col-md-2 col-sm-2">
                                         <div class="icon text-right">
                                             <!--fa fa-laptop-->
-                                            <i class="fa fa-building-o"></i>
+                                            <i class="fa fa-book-reader"></i>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-10 col-sm-10"style="text-align: right">
+                                    <div class="col-md-10 col-sm-10" style="text-align: right">
                                         <h5>علوم إدارة الأعمال</h5>
                                         <h4>نخرج كفاءات في ادارة الاعمال</h4>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -589,16 +689,23 @@
                                     <div class="col-md-2 col-sm-2">
                                         <div class="icon text-right">
                                             <!--fa fa-paper-plane-o-->
-                                            <i class="fa fa-bank"></i>
+                                            <i class="fa fa-building"></i>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-10 col-sm-10"style="text-align: right">
+                                    <div class="col-md-10 col-sm-10" style="text-align: right">
                                         <h5>علوم خدمات المصارف وادارة الاستثمار</h5>
                                         <h4>نخرج مصرفيين وخبراء إستثمار</h4>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -633,30 +740,465 @@
 
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <img src="img/tech/tech-statement.jpg" alt="creativity">
-                                </div>
-                                <div class="col-md-6">
+
+                                <div class="col-lg-12">
                                     <div class="tab-bg">
-                                        <h2>01</h2>
-                                        <h3>متطلبات التخصص</h3>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                        <h3>الخطة الدراسية</h3>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                        <h3>المواد الدراسية المقررة</h3>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-        
+                                        <h3>نبذة عن القسم</h3>
+                                        <p>نشأ قسم المحاسبة مع تأسيس المركـز المتقدم للمهن الإدارية والمالـــية (كلية
+                                            العلوم الإدارية والمالية التطبيقية /طرابلس حالياً). ويعمل قسم المحاسبة منذ
+                                            نشأته على توفير التعليم التقني والمهني الذي يساهم في تكوين محاسبين مهرة
+                                            ملبيين لاحتياجات سوق العمل.
+                                        </p>
+                                        <h3>رؤية ورسالة القسم</h3>
+                                        <p> <strong>الرؤية:</strong> نتطلع أن يكون خريجي قسم المحاسبة الأكثر تميزاً
+                                            وتأهيلاً في سوق العمل المحلي. <br>
+                                            <strong>الرسالة:</strong> توفير التعليم المحاسبي المتميز للطلاب لتمكينهم من
+                                            المنافسة بنجاح في السوق ومتابعة دراستهم العليا وتوفير البيئة الملائمة
+                                            المحفزة للبحث العلمي في مجال المحاسبة.
+                                        </p>
+                                        <h3>أهداف القسم:</h3>
+                                        <p> <strong>1-</strong> العمل على تكوين وتأهيل خريجين يمتلكون القدر المناسب من
+                                            المهارة والتأهيل العلمي والمهني الذي يتوافق واحتياجات سوق العمل. <br>
+                                            <strong>2-</strong> سد الفجوة بين التعليم المهني للطالب والواقع العملي من
+                                            خلال البحوث الفصلية ومشروع التخرج الذي ينجزه طلبة القسم. <br>
+                                            <strong>3-</strong> تعريف الطالب بمجالات العمل المتاحة في سوق العمل وكيفية
+                                            المفاضلة واختيار الأنسب من بينها. <br>
+                                            <strong>4-</strong> تحديث وتطوير الخطط والمقررات والمناهج الدراسية بما
+                                            يتناسب والتطورات العلمية والمهنية ويتوافق مع متطلبات الجودة الشاملة. <br>
+                                            <strong>5-</strong> العمل على توفير البيئة العلمية والتأهيلية التي تتناسب
+                                            واحتياجات الطلبة التعليمية والمعرفية والمحفزة للتميز والإبداع. <br>
+                                            <strong>6-</strong> استقطاب الكفاءات العلمية متخصصة وذات خبرة في مجال تخصص
+                                            القسم للمساهمة في أداء رسالة القسم. <br>
+                                            <strong>7-</strong> دعم المجتمع بالعديد من التخصصات التي يحتاجها كالتدقيق
+                                            والمراجعة المحاسبية والتدريس وغيره. <br>
+                                        </p>
+                                        <h3>الشهادة التي يمنحها القسم: </h3>
+                                        <p>يحصل الدارس بالقسم على شهادة البكالوريوس في تخصص المحاسبة بعد أن يتم بنجاح
+                                            (128) ساعة معتمدة موزعة كالتالي:
+                                            <div class="table-responsive-sm">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">مجموع المقررات</th>
+                                                            <th scope="col">محاضرات</th>
+                                                            <th scope="col">معامل</th>
+                                                            <th scope="col">تدريب</th>
+                                                            <th scope="col">المجموع</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">عدد الساعات المعتمدة لمواد التخصص</th>
+                                                            <td class="text-center">62</td>
+                                                            <td class="text-center">4</td>
+                                                            <td class="text-center">7</td>
+                                                            <td class="text-center">73</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">عدد الساعات المعتمدة للمواد الداعمة</th>
+                                                            <td class="text-center">28</td>
+                                                            <td class="text-center">-</td>
+                                                            <td class="text-center">-</td>
+                                                            <td class="text-center">28</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">عدد الساعات المعتمدة للمواد العامة</th>
+                                                            <td class="text-center">21</td>
+                                                            <td class="text-center">6</td>
+                                                            <td class="text-center">-</td>
+                                                            <td class="text-center">27</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-success" scope="row">الإجمالي</th>
+                                                            <td class="text-center table-success">111</td>
+                                                            <td class="text-center table-success">10</td>
+                                                            <td class="text-center table-success">7</td>
+                                                            <td class="text-center table-success">128</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </p>
+                                        <!-- Our Team Test-->
+                                        <div class="container mb-4">
+                                            <div class="row blog">
+                                                <h3>أعضاء هيئة التدريس بالقسم </h3>
+                                                <div class="col-md-12">
+                                                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                                                        <ol class="carousel-indicators mt-5">
+                                                            <li data-target="#blogCarousel" data-slide-to="0"
+                                                                class="active"></li>
+                                                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                                                        </ol>
+
+                                                        <!-- Carousel items -->
+                                                        <div class="carousel-inner">
+
+                                                            <div class="carousel-item active">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dana ROBINSON</h3>
+                                                                                <span class="post">Marketing
+                                                                                    Consultant</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dr. Bernard COVA</h3>
+                                                                                <span class="post">Marketing -
+                                                                                    Auteur</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dr. Francis Guilbert
+                                                                                </h3>
+                                                                                <span class="post">Docteur -
+                                                                                    Chercheur</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dr. Georges WANET</h3>
+                                                                                <span class="post">Docteur</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!--.row-->
+                                                            </div>
+                                                            <!--.item-->
+
+                                                            <div class="carousel-item">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Ted SICHELMAN</h3>
+                                                                                <span class="post">Law expert</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dr. Noël ALBERT</h3>
+                                                                                <span class="post">Marketing
+                                                                                    Consultant</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Dr. Saverio TOMASELLA
+                                                                                </h3>
+                                                                                <span class="post">Auteur et Chercheur -
+                                                                                    Brand Psychoanalysis</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                                                        <div class="our-team">
+                                                                            <div class="pic">
+                                                                                <img
+                                                                                    src="https://i.ibb.co/L8Pj1mg/o6EuTCT6.jpg">
+                                                                            </div>
+                                                                            <div class="team-content">
+                                                                                <h3 class="title">Ray BENEDICKTUS</h3>
+                                                                                <span class="post">Experienced Marketing
+                                                                                    Consultant</span>
+                                                                            </div>
+                                                                            <ul class="social">
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        class="fa fa-envelope"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!--.row-->
+                                                            </div>
+                                                            <!--.item-->
+
+                                                        </div>
+                                                        <!--.carousel-inner-->
+                                                    </div>
+                                                    <!--.Carousel-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Our Team Test-->
+                                        <!-- <div class="row">
+                                            <div class="col-sm-3 mb-4">
+                                                <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                    <img src="/img/services/icon-of-unknown-person.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                        <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                        <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-facebook-f fa-2x text-primary"></i>
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-google-plus fa-2x text-danger"></i>
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-twitter fa-2x text-info"></i>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-3 mb-4">
+                                                <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                    <img src="/img/services/icon-of-unknown-person.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                        <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                        <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-facebook-f fa-2x text-primary"></i>
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-google-plus fa-2x text-danger"></i>
+                                                            <li class="list-inline-item"><a href="#"> <i
+                                                                        class="fab fa-twitter fa-2x text-info"></i>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div> -->
+                                        <!-- <div class="row">
+                                            <div class="col-lg-4 col-md-6">
+                                              <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                <img src="/img/services/icon-of-unknown-person.png"
+                                                class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                    <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                    <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                    </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                    <img src="/img/services/icon-of-unknown-person.png"
+                                                    class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                        <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                        <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                    <img src="/img/services/icon-of-unknown-person.png"
+                                                    class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                        <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                        <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-6">
+                                                <div class="card shadow p-3 mb-5 bg-white rounded">
+                                                    <img src="/img/services/icon-of-unknown-person.png"
+                                                    class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title lead">الصيد عبدالسلام رمضان الدرهوبي</h5>
+                                                        <p class="card-text"><strong>الدرجة العلمية :</strong> محاضر</p>
+                                                        <p class="card-text"><strong>المؤهل العلمي :</strong> ماجستير
+                                                        </p>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                          </div> -->
+                                        <!-- <h3>أعضاء هيئة التدريس بالقسم </h3>
+                                        <p>يضم قسم المحاسبة على جملة من الكوادر العلمية المتميزة ذات الكفاءة العالية التي ساهمت بتخريج جيل من المحاسبين المتميزيين وهم :
+                                            <div class="table-responsive-sm">
+                                            <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">الإسم</th>
+                                                    <th scope="col">الدرجةالعلمية</th>
+                                                    <th scope="col">المؤهل العلمي</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th  scope="row">الصيد عبدالسلام رمضان الدرهوبي</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">ماجستر</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">نورالدين عبدالله حمودة</th>
+                                                    <td class="text-center">أستاذ مشارك</td>
+                                                    <td class="text-center">دكتوراة</td>
+                                                  </tr>
+                                                  <tr>
+
+                                                    <th scope="row">فتحي صالح ميلود غريبي</th>
+                                                    <td class="text-center">أستاذ مساعد</td>
+                                                    <td class="text-center">دكتوراه</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">الأمين خليفة علي الطويل</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">دكتوراه</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">محمد منصور الصيد عثمان</th>
+                                                    <td class="text-center">أستاذ مساعد</td>
+                                                    <td class="text-center">ماجستر</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">فتحي أبوراوي نصر سالم</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">دكتوراه</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">فيروز عبدالرحيم محمد النعاس</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">دكتوراه</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">إسماعيل الطاهر مفتاح الأحمر</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">دكتوراه</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">هشام محمود الصديق أبو حامد</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">ماجستر</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">سامي عياد الفيتوري راشد</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">ماجستر</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">مفتاح محمد مفتاح زايد</th>
+                                                    <td class="text-center">محاضر</td>
+                                                    <td class="text-center">ماجستر</td>
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th class="table-success" scope="row">الإجمالي</th>
+                                                    <td class="text-center table-success">111</td>
+                                                    <td class="text-center table-success">10</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </div>
+                                        </p> -->
                                         <div id="services-02-btn-01">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">تحميل نمادج القسم</a>
+                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
+                                                role="button">تحميل نمادج القسم</a>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- <div class="col-md-6">
+                                    <img src="img/services/pexels-photo-210990.jpeg" alt="creativity">
+                                </div> -->
                             </div>
                         </div>
 
@@ -667,27 +1209,49 @@
 
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <img src="img/tech/tech-statement.jpg" alt="strategy">
-                                </div>
-                                <div class="col-md-6">
+                                <!-- <div class="col-lg-6">
+                                    <img src="img/services/hr.jpeg" alt="strategy">
+                                </div> -->
+                                <div class="col-lg-12">
                                     <div class="tab-bg">
                                         <h2>02</h2>
                                         <h3>متطلبات التخصص</h3>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>الخطة الدراسية</h3>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>المواد الدراسية المقررة</h3>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-    
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>الخطة الدراسية</h3>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>المواد الدراسية المقررة</h3>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+
                                         <div id="services-02-btn-02">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">تحميل مواد القسم</a>
+                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
+                                                role="button">تحميل مواد القسم</a>
                                         </div>
                                     </div>
                                 </div>
@@ -702,26 +1266,48 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="img/tech/tech-statement.jpg" alt="design">
+                                    <img src="img/services/Bank.jpeg" alt="design">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="tab-bg">
                                         <h2>03</h2>
                                         <h3>متطلبات التخصص</h3>
-                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>الخطة الدراسية</h3>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>المواد الدراسية المقررة</h3>
-                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-    
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>الخطة الدراسية</h3>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>المواد الدراسية المقررة</h3>
+                                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                            إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+
                                         <div id="services-02-btn-03">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">تحميل مواد القسم</a>
+                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
+                                                role="button">تحميل مواد القسم</a>
                                         </div>
                                     </div>
                                 </div>
@@ -735,26 +1321,48 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="img/tech/tech-statement.jpg" alt="development">
+                                    <img src="img/services/Library.jpeg" alt="development">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="tab-bg">
                                         <h2>04</h2>
                                         <h3></h3>
-                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>الخطة الدراسية</h3>
-                                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-                                            <h3>المواد الدراسية المقررة</h3>
-                                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-    
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>الخطة الدراسية</h3>
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <h3>المواد الدراسية المقررة</h3>
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+
                                         <div id="services-02-btn-04">
-                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">تحميل مواد القسم</a>
+                                            <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch"
+                                                role="button">تحميل مواد القسم</a>
                                         </div>
                                     </div>
                                 </div>
@@ -786,7 +1394,8 @@
 
                         <div class="vertical-heading">
                             <h5>تعرف على </h5>
-                            <h2 style="text-align: right">الطلبة <strong style="color: green">المتفوقين</strong> <br>في الكلية</h2>
+                            <h2 style="text-align: right">الطلبة <strong style="color: green">المتفوقين</strong> <br>في
+                                الكلية</h2>
                         </div>
 
                     </div>
@@ -819,7 +1428,7 @@
 
                         <div id="isotope-container">
 
-                            <div class="col-md-3 col-sm-6 col-xs-12 desktop" >
+                            <div class="col-md-3 col-sm-6 col-xs-12 desktop">
 
                                 <!-- Portfolio Item 01 -->
                                 <div class="portfolio-item">
@@ -937,7 +1546,7 @@
                                                 <span></span>
                                                 <!-- Item Description -->
                                                 <p>
-                                                   ممتاز
+                                                    ممتاز
                                                 </p>
                                             </div>
                                         </div>
@@ -961,7 +1570,7 @@
                                                 <span></span>
                                                 <!-- Item Description -->
                                                 <p>
-                                                   ممتاز
+                                                    ممتاز
                                                 </p>
                                             </div>
                                         </div>
@@ -974,7 +1583,8 @@
                                 <div class="portfolio-item">
 
                                     <a href="img/testimonial/client-1.jpg" title="محمد العباني">
-                                        <img src="img/testimonial/client-1.jpg" class="img-responsive" alt="portfolio 07">
+                                        <img src="img/testimonial/client-1.jpg" class="img-responsive"
+                                            alt="portfolio 07">
 
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
@@ -999,7 +1609,8 @@
                                 <div class="portfolio-item">
 
                                     <a href="img/testimonial/client-2.jpg" title="عصام نوري">
-                                        <img src="img/testimonial/client-2.jpg" class="img-responsive" alt="portfolio 08">
+                                        <img src="img/testimonial/client-2.jpg" class="img-responsive"
+                                            alt="portfolio 08">
                                         <div class="portfolio-item-overlay">
                                             <div class="portfolio-item-details text-center">
                                                 <!-- Item Header -->
@@ -1034,27 +1645,19 @@
 
     <!-- Testimonials -->
     <section id="testimonials">
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-md-4 col-sm-4 wow slideInLeft">
-
                     <div class="vertical-heading">
                         <h5>من نحن</h5>
-                        <h2 class="text-right">فريق <br><strong class="text-success">قسم الدراسة والامتحانات</strong></h2>
+                        <h2 class="text-right">فريق <br><strong class="text-success">قسم الدراسة والامتحانات</strong>
+                        </h2>
                     </div>
-
                 </div>
-
                 <div class="col-md-8 col-sm-8 wow fadeIn" data-wow-duration="2s" style="text-align: right">
-
                     <div id="testimonial-slider" class="owl-carousel owl-theme">
-
                         <!-- Testimonial 01 -->
                         <div class="testimonial">
-
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-6">
                                     <h3>تنزيل المواد</h3>
@@ -1069,16 +1672,20 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
-
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                                الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
                             <div class="author">
-
                                 <div class="row">
                                     <div class="col-md-2 col-sm-3 col-xs-6">
-                                        <img src="img/testimonial/client-1.jpg" alt="client" class="img-responsive img-circle">
+                                        <img src="img/testimonial/client-1.jpg" alt="client"
+                                            class="img-responsive img-circle">
                                     </div>
                                     <div class="col-md-10 col-sm-3 col-xs-6">
                                         <div class="author-name-des">
@@ -1086,11 +1693,8 @@
                                             <p>رئيس القسم</p>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
 
                         <!-- Testimonial 02 -->
@@ -1111,15 +1715,22 @@
                                 </div>
                             </div>
 
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                                الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
 
                             <div class="author">
 
                                 <div class="row">
                                     <div class="col-md-2 col-sm-3 col-xs-6">
-                                        <img src="img/testimonial/client-2.jpg" alt="client" class="img-responsive img-circle">
+                                        <img src="img/testimonial/client-2.jpg" alt="client"
+                                            class="img-responsive img-circle">
                                     </div>
                                     <div class="col-md-10 col-sm-3 col-xs-6">
                                         <div class="author-name-des">
@@ -1152,15 +1763,22 @@
                                 </div>
                             </div>
 
-                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                                العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد
+                                الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
 
                             <div class="author">
 
                                 <div class="row">
                                     <div class="col-md-2 col-sm-3 col-xs-6">
-                                        <img src="img/testimonial/client-3.jpg" alt="client" class="img-responsive img-circle">
+                                        <img src="img/testimonial/client-3.jpg" alt="client"
+                                            class="img-responsive img-circle">
                                     </div>
                                     <div class="col-md-10 col-sm-3 col-xs-6">
                                         <div class="author-name-des">
@@ -1222,9 +1840,16 @@
                                         <h2></h2>
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -1235,11 +1860,12 @@
                                 <li><i class="fa fa-check"></i>تحصيل رسوم التنزيل</li>
                                 <li><i class="fa fa-check"></i>صرف مخصصات</li>
                                 <li><i class="fa fa-check"></i>استشارات مالية</li>
-                                
+
                             </ul>
 
                             <div id="pricing-btn-01">
-                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">مزيد من المعلومات</a>
+                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">مزيد من
+                                    المعلومات</a>
                             </div>
 
                         </div>
@@ -1261,9 +1887,16 @@
                                         <h2></h2>
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -1278,7 +1911,8 @@
                             </ul>
 
                             <div id="pricing-btn-02">
-                                <a class="btn btn-general btn-white" href="#" title="Get Started" role="button">لمزيد من المعلومات</a>
+                                <a class="btn btn-general btn-white" href="#" title="Get Started" role="button">لمزيد من
+                                    المعلومات</a>
                             </div>
 
                         </div>
@@ -1300,9 +1934,16 @@
                                         <h2></h2>
                                     </div>
                                     <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                        <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                            العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد
+                                            الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى
+                                            مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن
+                                            يطلع على صورة حقيقية لتصميم الموقع.
+                                            ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                            كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا
+                                            علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     </div>
 
                                 </div>
@@ -1313,7 +1954,8 @@
                             </ul>
 
                             <div id="pricing-btn-03">
-                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">لمزيد من المعلومات</a>
+                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">لمزيد
+                                    من المعلومات</a>
                             </div>
 
                         </div>
@@ -1342,7 +1984,8 @@
 
                         <div class="vertical-heading">
                             <h5 id="test">احصائيات</h5>
-                            <h2 style="text-align: right">نفتخر<br><strong class="text-primary">بإنجازاتنا</strong> والدفعات التي قمنا بتخريجها</h2>
+                            <h2 style="text-align: right">نفتخر<br><strong class="text-primary">بإنجازاتنا</strong>
+                                والدفعات التي قمنا بتخريجها</h2>
                         </div>
 
                     </div>
@@ -1403,7 +2046,7 @@
     <!-- Stats Ends -->
 
     <!-- Clients -->
-  
+
     <!-- Clients Ends -->
 
     <!-- Blog -->
@@ -1417,18 +2060,26 @@
 
                     <div class="col-md-5 col-sm-4 wow slideInLeft">
 
-                        <div id="blog-left" >
+                        <div id="blog-left">
 
                             <div class="vertical-heading">
                                 <h5>اخبار الكلية</h5>
-                                <h2 style="text-align: right">اخر<br>منشورات <strong class="text-info">الكلية</strong></h2>
+                                <h2 style="text-align: right">اخر<br>منشورات <strong class="text-info">الكلية</strong>
+                                </h2>
                             </div>
-                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
 
                             <div id="blog-btn">
-                                <a class="btn btn-general btn-yellow" href="#" title="View All Posts" role="button">عرض كافة المنشورات</a>
+                                <a class="btn btn-general btn-yellow" href="#" title="View All Posts" role="button">عرض
+                                    كافة المنشورات</a>
                             </div>
 
                         </div>
@@ -1445,16 +2096,24 @@
                                 <div class="blog-post">
 
                                     <h4 style="text-align: right">عنوان الدراسة</h4>
-                                    <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                    <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                                        من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                                        كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي
+                                        المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                                        حقيقية لتصميم الموقع.
+                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                        كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له
+                                        بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     <a href="#">إقرأ المزيد ></a>
 
                                     <div class="post-meta">
                                         <div class="row">
 
                                             <div class="col-md-6 col-sm-8 col-xs-5">
-                                                <p><img src="img/blog/user-1.jpg" alt="author" class="img-circle"> د. سالم الغناي</p>
+                                                <p><img src="img/blog/user-1.jpg" alt="author" class="img-circle"> د.
+                                                    سالم الغناي</p>
                                             </div>
                                             <div class="col-md-6 col-sm-4 col-xs-7">
                                                 <p class="text-right">اكتوبر 02,2019</p>
@@ -1473,16 +2132,24 @@
                                 <div class="blog-post">
 
                                     <h4 style="text-align: right">عنوان المنشور</h4>
-                                    <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                    <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد
+                                        تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+                                        من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                        إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                                        كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي
+                                        المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة
+                                        حقيقية لتصميم الموقع.
+                                        ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل
+                                        كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له
+                                        بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
                                     <a href="#">إقرأ امزيد ></a>
 
                                     <div class="post-meta">
                                         <div class="row">
 
                                             <div class="col-md-6 col-sm-8 col-xs-5">
-                                                <p><img src="img/blog/user-2.jpg" alt="author" class="img-circle"> د.نوري البكوش</p>
+                                                <p><img src="img/blog/user-2.jpg" alt="author" class="img-circle">
+                                                    د.نوري البكوش</p>
                                             </div>
                                             <div class="col-md-6 col-sm-4 col-xs-7">
                                                 <p class="text-right">نوفمبر 15,2019</p>
@@ -1527,9 +2194,15 @@
                                 <h5>من نحن</h5>
                                 <h2 style="text-align: right">ابقى<br>على <strong class=" text-info">تواصل</strong></h2>
                             </div>
-                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                            <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على
+                                وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                                ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد
+                                النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه
+                                التصميم فيظهر بشكل لا يليق.</p>
 
                             <div id="offices">
 
@@ -1542,7 +2215,8 @@
                                             <ul class="office-details">
                                                 <li><i class="fa fa-mobile"></i><span>+(218) 91 00 00 00</span></li>
                                                 <li><i class="fa fa-envelope"></i><span>support@solo.com</span></li>
-                                                <li><i class="fa fa-map-marker"></i><span>المدينة السياحية<br>طرابلس ليبيا</span></li>
+                                                <li><i class="fa fa-map-marker"></i><span>المدينة السياحية<br>طرابلس
+                                                        ليبيا</span></li>
                                             </ul>
                                         </div>
 
@@ -1554,7 +2228,8 @@
                                             <ul class="office-details">
                                                 <li><i class="fa fa-mobile"></i><span>+(218) 92 00 00 00</span></li>
                                                 <li><i class="fa fa-envelope"></i><span>support@solo.com</span></li>
-                                                <li><i class="fa fa-map-marker"></i><span>بالقرب من ميدان <br>بنغازي ليبيا</span></li>
+                                                <li><i class="fa fa-map-marker"></i><span>بالقرب من ميدان <br>بنغازي
+                                                        ليبيا</span></li>
                                             </ul>
                                         </div>
 
@@ -1580,20 +2255,29 @@
 
                             <form>
                                 <h4 style="text-align: right">إرسال رسالة</h4>
-                                <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
+                                <p style="text-align: right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                    توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+                                    النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما
+                                    تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع
+                                    على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                    الموقع.
+                                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور
+                                    مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى
+                                    يتحدث عنه التصميم فيظهر بشكل لا يليق.</p>
 
                                 <div class="row">
 
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="name" placeholder="الإسم بالكامل">
+                                            <input type="text" class="form-control" id="name"
+                                                placeholder="الإسم بالكامل">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="البريد الإلكتروني">
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
@@ -1613,7 +2297,8 @@
                                 </div>
 
                                 <div id="submit-btn">
-                                    <a class="btn btn-general btn-yellow" href="#" title="Submit" role="button">ارسال</a>
+                                    <a class="btn btn-general btn-yellow" href="#" title="Submit"
+                                        role="button">ارسال</a>
                                 </div>
 
                             </form>
@@ -1654,7 +2339,8 @@
         </div>
 
         <!-- Back To Top -->
-        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs"
+            title="home" role="button">
             <i class="fa fa-angle-up"></i>
         </a>
 
@@ -1696,6 +2382,9 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <script src="js/fontawesome/all.min.js"></script>
+    <script src="js/fontawesome/fontawesome.min.js"></script>
+
 </body>
 
 </html>
